@@ -1,0 +1,89 @@
+:root {
+
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-dark-grey: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+
+  --fnt-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--fnt-family);
+  background-color: var(--clr-off-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin-top: 1rem;
+  color: var(--clr-white);
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.container {
+  background-color: var(--clr-dark-grey);
+  border-width: 1rem;
+  border-color: var(--clr-off-black);
+  border-radius: 0.5rem;
+  max-width: 384px;
+  min-width: 330px;
+}
+
+.container .avatar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.container .avatar img {
+  width: 70px;
+  border-radius: 50%; 
+}
+
+.container .name {
+  color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.container .location {
+  color: var(--clr-green);
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.container .role {
+  color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.container .link {
+  background-color: var(--clr-grey);
+  color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  width: 70%;
+  padding: 0.8rem;
+  margin: 0.8rem auto;
+  border-radius: 0.4rem;
+}
+
