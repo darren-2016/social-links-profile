@@ -9,14 +9,21 @@
   --fnt-family: "Inter", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--fnt-family);
-  background-color: var(--clr-off-black);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-off-black);
+
 }
 
 .attribution { 
@@ -31,6 +38,8 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   background-color: var(--clr-dark-grey);
   border-width: 1rem;
   border-color: var(--clr-off-black);
@@ -39,67 +48,74 @@ body {
   min-width: 330px;
 }
 
-.container .avatar {
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
 }
 
-.container .avatar img {
+.avatar img {
   width: 70px;
   border-radius: 50%; 
 }
 
-.container .name {
+.name {
   color: var(--clr-white);
-  display: flex;
-  justify-content: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 24px;
 }
 
-.container .location {
+.location {
   color: var(--clr-green);
-  display: flex;
-  justify-content: center;
   font-weight: 600;
   font-size: 12px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
-.container .role {
+.role {
   color: var(--clr-white);
-  display: flex;
-  justify-content: center;
   font-weight: 400;
   font-size: 12px;
   margin-top: 30px;
+  margin-bottom: 12px;
 }
 
-.socials ul {
-  
+.socials {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-.socials ul li {
+.socials li {
   background-color: var(--clr-grey);
   color: var(--clr-white);
   display: flex;
   justify-content: center;
   font-weight: 700;
   font-size: 12px;
-  width: 100%;
+  width: 80%;
   padding: 0.8rem 0;
   margin: 0.8rem auto;
   border-radius: 0.4rem;
 }
 
-.socials ul li a {
+.socials li a {
   background-color: var(--clr-grey);
   color: var(--clr-white);
+  text-decoration: none;
 }
 
-.socials ul li a:hover {
+.socials li a:hover {
   color: var(--clr-green);
 }
 
